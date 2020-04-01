@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Link,useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './styles.css';
 import api from '../../services/api';
 import { FiPower, FiTrash2 } from 'react-icons/fi';
-//import heroesImg from '../../assets/heroesImg.png';
 import logoImg from '../../assets/logoImg.svg';
 
 
 export default function Profile() {
     const [incidents, setIncidents] = useState([]);
 
-const history = useHistory();
+    const history = useHistory();
 
     const ongName = localStorage.getItem('ongName');
     const ongId = localStorage.getItem('ongId');
@@ -28,8 +27,8 @@ const history = useHistory();
 
     async function handleDeleteIncident(id) {
         try {
-            await api.delete(`incidents/${id}`,{
-                headers:{
+            await api.delete(`incidents/${id}`, {
+                headers: {
                     Authorization: ongId,
                 }
             });
@@ -40,7 +39,7 @@ const history = useHistory();
     }
 
 
-    function handleLogout(){
+    function handleLogout() {
         localStorage.clear();
         history.push('/');
     }
@@ -66,7 +65,7 @@ const history = useHistory();
                         <strong>VALOR:</strong>
                         <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
 
-                        <button onClick={()=>handleDeleteIncident(incident.id)}type="button">
+                        <button onClick={() => handleDeleteIncident(incident.id)} type="button">
                             <FiTrash2 size={20} color="#a8a8b3" />
                         </button>
                     </li>
