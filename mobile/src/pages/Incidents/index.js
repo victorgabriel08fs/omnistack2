@@ -21,7 +21,7 @@ export default function Incidents() {
 
                     <Text style={styles.incidentProperty}>CASO</Text>
                     <Text style={styles.incidentValue}>Cadelinha</Text>
-
+                    
                     <Text style={styles.incidentProperty}>VALOR</Text>
                     <Text style={styles.incidentValue}>R$ 120,00</Text>
 
