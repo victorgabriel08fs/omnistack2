@@ -39,35 +39,35 @@ export default StyleSheet.create({
         color: '#737380'
     },
 
-    incidentList:{
+    incidentList: {
         marginTop: 32
     },
 
-    incident:{
+    incident: {
         padding: 24,
         borderRadius: 8,
         backgroundColor: '#FFF',
         marginBottom: 16
     },
-    incidentProperty:{
-        fontSize:14,
-        color:'#41414d',
+    incidentProperty: {
+        fontSize: 14,
+        color: '#41414d',
         fontWeight: 'bold'
     },
-    incidentValue:{
+    incidentValue: {
         marginTop: 8,
-        fontSize:15,
+        fontSize: 15,
         marginBottom: 24,
         color: '#737380'
     },
-    detailsButton:{
-        flexDirection:'row',
-        justifyContent:'space-between',
-        alignItems:'center'
+    detailsButton: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center'
     },
-    detailsButtonText:{
-        color:'#e02041',
-        fontSize:15,
-        fontWeight:'bold'
+    detailsButtonText: {
+        color: '#e02041',
+        fontSize: 15,
+        fontWeight: 'bold'
     }
 });
