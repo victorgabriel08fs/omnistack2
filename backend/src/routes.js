@@ -18,7 +18,7 @@ routes.post('/ongs', celebrate({
     [Segments.BODY]: Joi.object().keys({
         name: Joi.string().required().min(1),
         email: Joi.string().required().email(),
-        whatsapp: Joi.number().required(),
+        whatsapp: Joi.string().required(),
         city: Joi.string().required().min(1),
         uf: Joi.string().required().length(2)
 

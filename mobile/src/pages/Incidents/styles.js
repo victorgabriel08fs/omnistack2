@@ -36,7 +36,8 @@ export default StyleSheet.create({
     description: {
         fontSize: 16,
         lineHeight: 24,
-        color: '#737380'
+        color: '#737380',
+        marginBottom: 10
     },
 
     incidentList: {
